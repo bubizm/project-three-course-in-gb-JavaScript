@@ -1,0 +1,1 @@
+Курс Базовый курс JavaScript. 3 по счету курс от gb по программе "Fullstack JavaScript разработчик"

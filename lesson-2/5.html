@@ -37,9 +37,9 @@ Infinity делать не нужно, однако, в случае если б
    * математической операцией, после чего ссылается
    * на функцию, которая производит данную операцию
    * 
-   * @param arg1 {number} первое число
-   * @param arg2 {number} второе число
-   * @param operation {string} математический знак
+   * @param {number} arg1 первое число
+   * @param {number} arg2 второе число
+   * @param {string} operation математический знак
      или "+", или "-", или "*", или "/".
    * @returns {number} возвращает результат операции 
    */
@@ -57,48 +57,47 @@ Infinity делать не нужно, однако, в случае если б
     }
   }
 
-  /**
+   /**
    * Функция сложения
    * @param a {number} первое число
    * @param b {number} второе число
    * @returns результат сложения
    */
    function sum(a, b) {
-    return a+b;
+    return a + b;
   }
 
   /**
    * Функция вычитания
-   * @param a {number} первое число
-   * @param b {number} второе число
-   * @returns результат вычитания
+   * @param {number} a первое число
+   * @param {number} b второе число
+   * @returns {number} результат вычитания
    */
   function diff(a, b) {
     if (a >= b) {
-      return a-b;
-    } else {
-      return b-a;
+      return a - b;
     }
+      return b - a;
   }
 
   /**
    * Функция деления
-   * @param a {number} первое число
-   * @param b {number} второе число
-   * @returns результат деления большего числа на меньшее
+   * @param {number} a первое число
+   * @param {number} b второе число
+   * @returns {number} результат деления большего числа на меньшее
    */
   function division(a, b) {
-    return a/b;
+    return a / b;
   }
 
   /**
    * Функция умножения
-   * @param a {number} первое число
-   * @param b {number} второе число
-   * @returns результат умножения
+   * @param {number} a первое число
+   * @param {number} b второе число
+   * @returns {number} результат умножения
    */
   function multi(a, b) {
-    return a*b;
+    return a * b;
   }
 
   const num1 = +prompt("Введите первое число");

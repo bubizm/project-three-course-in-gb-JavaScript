@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+
+<body>
+  <!--
+Обязательное задание.
+
+1. Необходимо вывести в консоль массив продуктов в котором есть хоть одна
+фотография используя метод filter. Исходные данные - массив products.
+2. Необходимо отсортировать массив products используя метод sort по цене,
+начиная с самой маленькой, заканчивая самой большой ценой, после чего вывести
+отсортированный массив в консоль.
+-->
+  <script>
+    "use strict";
+
+    const products = [
+      {
+        id: 3,
+        price: 127,
+        photos: [
+          "1.jpg",
+          "2.jpg",
+        ],
+      },
+      {
+        id: 5,
+        price: 499,
+        photos: [],
+      },
+      {
+        id: 10,
+        price: 26,
+        photos: [
+          "3.jpg",
+        ],
+      },
+      {
+        id: 8,
+        price: 78,
+      },
+    ];
+
+    // первое задание
+    const result = products.filter((product) => {
+      if (product.photos != undefined) {
+        if (product.photos.length != 0) {
+          return product;
+        }
+      }
+    });
+    console.log(result);
+
+    // второе задание
+
+    const result2 = products.sort(function (a, b) {
+      return a.price - b.price;
+    })
+    console.log(result2);
+
+    //не понял как он их сортирует, через отладчик смотрел но яснее не стало.
+     //На MDN так написано return a - b, это получается как правило 
+     //и смысла внутрь смотреть, как это работает, нет?
+
+  </script>
+</body>
+
+</html>

@@ -21,15 +21,15 @@
 <script>
   "use strict";
 
-  let a = +prompt('Введите число 1');
-  let b = +prompt('Введите число 2');
+  const a = +prompt('Введите число 1');
+  const b = +prompt('Введите число 2');
 
   if (a > b) {
-    alert(a-b);
+    alert(a - b);
   } else if (a < 0 && b < 0) {
-      alert(a*b);
+    alert(a * b);
   } else if ((a > 0 && b < 0) || (a < 0 && b > 0)) {
-      alert (a+b);
+    alert(a + b);
   }
 </script>
 </body>

@@ -47,20 +47,25 @@
     ];
 
     // первое задание
+    // const result = products.filter((product) => {
+    //   if (product.photos != undefined) {
+    //     if (product.photos.length != 0) {
+    //       return product;
+    //     }
+    //   }
+    // });
+    // console.log(result);
+
     const result = products.filter((product) => {
-      if (product.photos != undefined) {
-        if (product.photos.length != 0) {
-          return product;
-        }
+      if (product.photos !== undefined && product.photos.length !== 0) {
+        return 1;
       }
     });
     console.log(result);
 
     // второе задание
 
-    const result2 = products.sort(function (a, b) {
-      return a.price - b.price;
-    })
+    const result2 = products.sort((a, b) => a.price - b.price);
     console.log(result2);
 
     //не понял как он их сортирует, через отладчик смотрел но яснее не стало.
